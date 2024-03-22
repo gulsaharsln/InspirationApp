@@ -1,0 +1,105 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="720dp"
+            android:background="@color/primaryColor"
+            android:padding="16dp">
+
+                <!-- Image View -->
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/image_corner"
+                    android:scaleType="centerCrop" />
+
+                <!-- Title TextView -->
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/itim_regular"/>
+
+                <!-- Artist TextView -->
+                <TextView
+                    android:id="@+id/artistTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/itim_regular"/>
+
+                <!-- Description TextView -->
+                <TextView
+                    android:id="@+id/descriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/itim_regular"/>
+
+                <!-- TextView for displaying comments -->
+                <TextView
+                    android:id="@+id/commentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/itim_regular"/>
+
+                <!-- EditText for entering comments -->
+                <EditText
+                    android:id="@+id/commentEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_enter_comment"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:maxLines="5"
+                    android:imeOptions="actionDone"
+                    android:background="@drawable/rounded_text_background"
+                    android:textColor="@android:color/black"
+                    android:padding="12dp"
+                    android:layout_marginTop="0dp"/>
+
+                <!-- Button for submitting the comment -->
+                <Button
+                    android:id="@+id/submitCommentButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit_comment"
+                    android:background="@drawable/rounded_button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="12dp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="end"/>
+
+                <!-- RecyclerView for displaying comments -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/commentsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" />
+        </LinearLayout>
+</ScrollView>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">30 Days of Music</string>
+    <string name="music_tip_image_desc">Description for the music tip image</string>
+    <string name="title_music_tip_detail">Music Tip Detail</string>
+    <string name="share_music_tip">Share Music Tip</string>
+    <string name="hint_enter_comment">Enter Comment</string>
+    <string name="submit_comment">Submit Comment</string>
+</resources>

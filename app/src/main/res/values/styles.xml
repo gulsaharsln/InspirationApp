@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.InspirationApp" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/musicTipColor</item>
+
+
+        <item name="android:fontFamily">@font/itim_font_family</item>
+
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="fontFamily">@font/itim_font_family</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
